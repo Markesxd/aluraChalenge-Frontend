@@ -1,13 +1,71 @@
 .editor{
     background: #6BD1FF;
-    width: 50vw;
+    width: calc(50vw - 4rem);
+    height: 70vh;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 .code{
     background: black;
+    height: calc(100% - 2rem);
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
-.code > input{
+.code-header{
+    padding-bottom: 1rem;
+}
+
+.code-editor{
     background: black;
     border: none;
+    color: white;
+    width: 100%;
+    height: calc(100% - 2rem);
+    padding: 0;
+    resize: none;
+}
+
+.code-editor:focus{
+    outline: none;
+}
+
+.highlight-button {
+    color:white;
+    width: 50vw;
+    padding: 1rem;
+    margin: 1rem 25%;
+    background: rgba(80, 129, 251, 0.08);
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+
+.highlight-button:hover{
+    background: rgba(80, 129, 251, 0.16);
+}
+
+.highlight-button:active{
+    background: rgba(80, 129, 251, 0.32);
+}
+
+.ball{
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+}
+
+.red{
+    background: red;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.green{
+    background: green;
 }

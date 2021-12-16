@@ -1,5 +1,22 @@
-main{
+body{
     background: #051D3B;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main{
     height: calc(100vh - 4.5rem);
     display: flex;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+main::-webkit-scrollbar {
+    display: none;
 }
