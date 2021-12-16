@@ -1,0 +1,23 @@
+.cabecalio{
+    background: #051D3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+.cabecalio-logo{
+    height: 3rem;
+}
+
+.cabecalio-serchbar{
+    background: #2D415A;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.cabecalio-profilepic{
+    height: 3rem;
+}
