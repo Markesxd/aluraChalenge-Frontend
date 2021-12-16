@@ -1,0 +1,5 @@
+main{
+    background: #051D3B;
+    height: calc(100vh - 4.5rem);
+    display: flex;
+}

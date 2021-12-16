@@ -1,0 +1,13 @@
+.editor{
+    background: #6BD1FF;
+    width: 50vw;
+}
+
+.code{
+    background: black;
+}
+
+.code > input{
+    background: black;
+    border: none;
+}
