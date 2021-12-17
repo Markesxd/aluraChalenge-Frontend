@@ -11,6 +11,7 @@ body::-webkit-scrollbar {
 main{
     height: calc(100vh - 4.5rem);
     display: flex;
+    justify-content: space-between;
     overflow-y: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
