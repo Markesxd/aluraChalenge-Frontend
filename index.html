@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dracula.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/general.css">
@@ -38,14 +39,14 @@
                 <span class='menu-area'>Comunidade</span>
             </span>
         </div>
-        <div class='editor'>
+        <div class='editor' onclick="codeFocus()">
             <div class="code">
                 <div class="code-header">
                     <span class="ball red"></span>
                     <span class="ball yellow"></span>
                     <span class="ball green"></span>
                 </div>
-                <textarea name="code" id="code" class='code-editor' cols="30" rows="10"></textarea>
+                <code class='code-editor language-javascript' contenteditable="true" aria-label="Editor de Código"></code>
             </div>
         </div>
         <div class='options'>
@@ -56,19 +57,30 @@
             </span>
             <span>
                 <h4>PERSONALIZAÇÃO</h4>
-                <select name="personalizacao" id="personalizacao">
+                <select name="linguagem" id="linguagem">
                     <option value="JavaScript" default>JavaScript</option>
                     <option value="Java" default>Java</option>
                     <option value="Python" default>Python</option>
                     <option value="C" default>C</option>
                 </select> 
-                <span class='color-select'></span>
+                <span class='color-select' onclick="flick()">
+                    <span class='color-selection' id='hidden'>
+                        <span onclick='pickColor(event)' class='blue'></span>
+                        <span onclick='pickColor(event)' class='red'></span>
+                        <span onclick='pickColor(event)' class='yellow'></span>
+                        <span onclick='pickColor(event)' class='green'></span>
+                        <span onclick='pickColor(event)' class='purple'></span>
+                    </span>
+                </span>
             </span>
             <div>
                 <button>Salvar Projeto</button>
             </div>
         </div>
     </main>
-    <button type="button" class='highlight-button'>Visualizar com o highlight</button>
+    <button type="button" onclick="putHighlight()" class='highlight-button'>Visualizar com o highlight</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src='./js/editor.js'></script>
+    <script src='./js/options.js'></script>
 </body>
 </html>

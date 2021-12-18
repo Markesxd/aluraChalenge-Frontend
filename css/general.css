@@ -21,3 +21,7 @@ main{
 main::-webkit-scrollbar {
     display: none;
 }
+
+#hidden {
+    display: none;
+}

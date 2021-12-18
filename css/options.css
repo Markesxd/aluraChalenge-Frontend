@@ -30,11 +30,45 @@
 }
 
 .color-select {
+    display: flex;
     background: #6BD1FF;
     height: 2.5rem;
     border: 1px solid white;
+    justify-content: stretch;
+    padding: 0;
 }
 
 .options button:active {
     background: rgba(255, 255, 255, 0.32);
+}
+
+.color-selection {
+    display: flex;
+    background: black;
+    margin: 0;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+
+.color-selection span{
+    height: 2.5rem;
+    width: 5vw;
+    margin: 0;
+    /* border-radius: 0.5rem; */
+    opacity: 0.5;
+}
+
+.color-selection span:hover{
+    opacity: 1;
+}
+
+.blue {
+    background: blue;
+}
+
+.purple {
+    background: purple;
 }
