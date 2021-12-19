@@ -1,7 +1,8 @@
 body{
     background: #051D3B;
     -ms-overflow-style: none;  
-    scrollbar-width: none;  
+    scrollbar-width: none;
+    font-family: Inter;
 }
 
 body::-webkit-scrollbar {
